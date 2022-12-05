@@ -37,6 +37,6 @@
   }
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.row1{
+  background-color: #000000 !important;
 }
