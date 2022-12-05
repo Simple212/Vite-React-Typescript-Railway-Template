@@ -8,7 +8,7 @@ import {useEffect} from 'react'
 import Main2 from './Components/main2';
 import Main3 from './Components/main3';
 import 'clipboard'
-
+ 
 class App extends React.Component{
   constructor(){
     super()
