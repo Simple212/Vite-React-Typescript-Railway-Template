@@ -29,7 +29,7 @@ const Main1= ({reverse,value2,change1,value3,value4,value5,value6,value7,value10
                 setLgShow5(data20.litecoin.btc)
             }
             if(from1=='litecoin' && to1=='doge'){
-                setLgShow5('771.25')
+				setLgShow5('797.23')
             }
             if (from1=='dogecoin' && to1=='btc') {
                 setLgShow5(data20.dogecoin.btc)
@@ -38,7 +38,7 @@ const Main1= ({reverse,value2,change1,value3,value4,value5,value6,value7,value10
                 setLgShow5('0.0013')
             }
             if (from1=='bitcoin' && to1=='doge') {
-                setLgShow5('1,71,182.40')
+				setLgShow5('1,66,110.78')
             }
             if (from1=='bitcoin'&& to1=='ltc'){
                 setLgShow5(data20.bitcoin.ltc)
