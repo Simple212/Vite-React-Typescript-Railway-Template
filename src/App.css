@@ -40,3 +40,6 @@
 .row1{
   background-color: #000000 !important;
 }
+body{
+  overflow-x: hidden !important;
+}

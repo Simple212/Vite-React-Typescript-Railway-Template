@@ -24,28 +24,9 @@ const Main1= ({reverse,value2,change1,value3,value4,value5,value6,value7,value10
     const [isActive3, setActive3] = useState("false");
 
     useEffect(() => {
-        fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${from1}&vs_currencies=${to1}`).then(res => res.json()).then(data20 => {
-            if (from1=='litecoin' && to1=='btc') {
-                setLgShow5(data20.litecoin.btc)
-            }
-            if(from1=='litecoin' && to1=='doge'){
-				setLgShow5('797.23')
-            }
-            if (from1=='dogecoin' && to1=='btc') {
-                setLgShow5(data20.dogecoin.btc)
-            }
-            if(from1=='dogecoin' && to1=='ltc'){
-                setLgShow5('0.0013')
-            }
-            if (from1=='bitcoin' && to1=='doge') {
-				setLgShow5('1,66,110.78')
-            }
-            if (from1=='bitcoin'&& to1=='ltc'){
-                setLgShow5(data20.bitcoin.ltc)
-            }
-
-
-        })
+        fetch(`https://api.coingate.com/v2/rates/merchant/${from1}/${to1}`,{
+            mode:'no-cors'
+        }).then(data165 => data165.json()).then(data200 => console.log(data200))
     },[])
 
     const ToggleClass = () => {
