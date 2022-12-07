@@ -717,7 +717,7 @@ ltcvalidation = (event2)=>{
       <div>
         {this.state.from=='ltc' && this.state.to=='btc'
         ?<div>
-                    <Main1 change1={this.changevalue} value2 ={this.state.value2} value3={this.state.value3} value4={this.state.value4} value5={this.state.value5} value6={this.state.value6} reverse={this.reverse1} value10={this.state.value10} value11={this.state.value11} changetodoge={this.changetodoge1} changetoltc={this.changetoltc1} changetobtc={this.changetobtc1}  changetodoge4={this.changetodoge2} changetoltc4={this.changetoltc2} changetobtc4={this.changetobtc2} event1={this.btcvalidation} value500={this.state.show} value1500={this.state.show1}  from1={'LTC'} to1={'BTC'} value74={'none'} value75={'none'} value76={'block'} value71={'none'} value72={'none'} value73={'block'} call={this.calltofinal} value1006={this.hide2}  backtohome={this.home234}/>
+                    <Main1 change1={this.changevalue} value2 ={this.state.value2} value3={this.state.value3} value4={this.state.value4} value5={this.state.value5} value6={this.state.value6} reverse={this.reverse1} value10={this.state.value10} value11={this.state.value11} changetodoge={this.changetodoge1} changetoltc={this.changetoltc1} changetobtc={this.changetobtc1}  changetodoge4={this.changetodoge2} changetoltc4={this.changetoltc2} changetobtc4={this.changetobtc2} event1={this.btcvalidation} value500={this.state.show} value1500={this.state.show1}  from1={'litecoin'} to1={'btc'} value74={'none'} value75={'none'} value76={'block'} value71={'none'} value72={'none'} value73={'block'} call={this.calltofinal} value1006={this.hide2}  backtohome={this.home234}/>
 
                           {/* Footer begins */}
       <Row className='row1 d-flex justify-content-center align-items-center'>

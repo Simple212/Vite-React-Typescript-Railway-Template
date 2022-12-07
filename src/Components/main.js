@@ -24,9 +24,26 @@ const Main1= ({reverse,value2,change1,value3,value4,value5,value6,value7,value10
     const [isActive3, setActive3] = useState("false");
 
     useEffect(() => {
-        fetch(`https://api.coingate.com/v2/rates/merchant/${from1}/${to1}`,{
-            mode:'no-cors'
-        }).then(data165 => data165.json()).then(data200 => console.log(data200))
+        fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${from1}&vs_currencies=${to1}`).then(res => res.json()).then(data20 => {
+            if (from1=='litecoin' && to1=='btc') {
+                setLgShow5(data20.litecoin.btc)
+            }
+            if(from1=='litecoin' && to1=='doge'){
+            fetch('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd').then(data10 => data10.json()).then(data20 => { {fetch('https://api.coingecko.com/api/v3/simple/price?ids=litecoin&vs_currencies=usd').then(data30 => data30.json()).then(data40 => setLgShow5((data40.litecoin.usd)*(1/(data20.dogecoin.usd))))}})
+            }
+            if (from1=='dogecoin' && to1=='btc') {
+                setLgShow5(data20.dogecoin.btc)
+            }
+            if(from1=='dogecoin' && to1=='ltc'){
+                setLgShow5(data20.dogecoin.ltc)
+            }
+            if (from1=='bitcoin' && to1=='doge') {
+                fetch('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd').then(data10 => data10.json()).then(data20 => { {fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd').then(data30 => data30.json()).then(data40 => setLgShow5((data40.bitcoin.usd)*(1/(data20.dogecoin.usd))))}})
+            }
+            if (from1=='bitcoin'&& to1=='ltc'){
+                setLgShow5(data20.bitcoin.ltc)
+            }
+        })
     },[])
 
     const ToggleClass = () => {
