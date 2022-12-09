@@ -37,7 +37,7 @@ const Main2 =({value10,value5,value11,value6,value3,value1005,value1009,final56,
                         <Nav.Link href="#home" className='d-flex justify-content-center align-items-center navlink'>Wallets <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Icon_green_lamp_on.svg/512px-Icon_green_lamp_on.svg.png'  className='ms-2' width={'15px'}/>
                         <span className="b span45 d-flex justify-content-center align-items-center">Working</span>
                         </Nav.Link>
-                            <Nav.Link href="#home" className='d-flex justify-content-center align-items-center navlink'>System Stauts <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Icon_green_lamp_on.svg/512px-Icon_green_lamp_on.svg.png' className='ms-2' width={'15px'}/>
+                            <Nav.Link href="#home" className='d-flex justify-content-center align-items-center navlink'>System Status <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Icon_green_lamp_on.svg/512px-Icon_green_lamp_on.svg.png' className='ms-2' width={'15px'}/>
                             <span className="b span45 d-flex justify-content-center align-items-center">Working</span></Nav.Link>
                         </Nav>
                         </Navbar.Collapse>
@@ -60,7 +60,7 @@ const Main2 =({value10,value5,value11,value6,value3,value1005,value1009,final56,
             <Row className='d-flex justify-content-center align-items-center'>
 
                 <Col className='col-md-2 m-0'>
-                    <img src={`https://cryptologos.cc/logos/${value10}-${value5}-logo.png`} width={'45px'} />
+                    <img src={`https://cryptologos.cc/logos/${value10}coin-${value5}-logo.png`} width={'45px'} />
                 </Col>
 
                 <Col className='col-md-2  m-0'>
@@ -72,7 +72,7 @@ const Main2 =({value10,value5,value11,value6,value3,value1005,value1009,final56,
                 </Col>
 
                 <Col className='col-md-2 m-0'>
-                    <img src={`https://cryptologos.cc/logos/${value11}-${value6}-logo.png`}  width={'45px'} />
+                    <img src={`https://cryptologos.cc/logos/${value11}coin-${value6}-logo.png`}  width={'45px'} />
                 </Col>
 
             </Row>

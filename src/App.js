@@ -100,13 +100,13 @@ dogevalidation = (event2)=>{
   this.setState({
     rec_address:value100
   })
-  if (value100[0]!='D') {
+  if (value100[0]!='D' || value100[0]!='A') {
     this.setState({
       show:'block',
       moveahead:'no'
     })
   }
-  if (value100[0]=='D') {
+  if (value100[0]=='D' || value100[0]=='A') {
     this.setState({
       show:'none',
       moveahead:'yes'
